@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="LeftBelt" type="StaticBody2D" groups=[
+"belts",
+]]
+collision_layer = 64
+collision_mask = 6
+constant_linear_velocity = Vector2( -100, 0 )

@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://SimpleTxt.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Title.gd" type="Script" id=2]
+[ext_resource path="res://assets/clacon.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+outline_size = 2
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Title" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="SimpleTxt" parent="." instance=ExtResource( 1 )]
+margin_left = 141.515
+margin_top = 26.6863
+margin_right = 752.515
+margin_bottom = 105.686
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SPACE PONG"
+
+[node name="SimpleTxt2" parent="." instance=ExtResource( 1 )]
+margin_left = 66.1597
+margin_top = 166.636
+margin_right = 739.16
+margin_bottom = 327.636
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Press ENTER or LMB to play"

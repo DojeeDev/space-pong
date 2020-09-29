@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://SimpleTxt.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/clacon.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Credits.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 75
+outline_size = 2
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Credits" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="SimpleTxt" parent="." instance=ExtResource( 1 )]
+margin_left = 44.9492
+margin_top = 13.4848
+margin_right = 864.949
+margin_bottom = 92.4848
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Thanks for playing!"
+
+[node name="SimpleTxt2" parent="." instance=ExtResource( 1 )]
+margin_left = 31.5118
+margin_top = 109.461
+margin_right = 651.512
+margin_bottom = 326.461
+custom_fonts/font = SubResource( 2 )
+text = "Coding done by Ivan Martin
+
+Music by Joaquin Vintimilla
+
+Art done by KenneyArtAssets
+
+press ENTER or LMB to go to title screen"
+autowrap = false

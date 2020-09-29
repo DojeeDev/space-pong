@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/art_assets/blue_background.png" type="Texture" id=1]
+[ext_resource path="res://assets/art_assets/frontstars.png" type="Texture" id=2]
+[ext_resource path="res://assets/art_assets/starybackgroundmizjam2.png" type="Texture" id=3]
+[ext_resource path="res://assets/art_assets/starybackgroundmizjamlayer2.png" type="Texture" id=4]
+
+[node name="StarBackground" type="ParallaxBackground"]
+
+[node name="space" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 100, 100 )
+
+[node name="Sprite" type="Sprite" parent="space"]
+scale = Vector2( 100, 100 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="FrontStars" type="ParallaxLayer" parent="."]
+motion_offset = Vector2( 0.6, 0.6 )
+motion_mirroring = Vector2( 800, 800 )
+
+[node name="frontstars" type="Sprite" parent="FrontStars"]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="MiddleStars" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.4, 0.4 )
+motion_mirroring = Vector2( 800, 800 )
+
+[node name="Sprite" type="Sprite" parent="MiddleStars"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="BackStars" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.2, 0.2 )
+motion_mirroring = Vector2( 800, 800 )
+
+[node name="Sprite" type="Sprite" parent="BackStars"]
+texture = ExtResource( 4 )
+centered = false

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Story.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Story_start.gd" type="Script" id=2]
+
+[node name="Story_start" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="SimpleTxt" parent="." index="0"]
+margin_right = 702.0
+margin_bottom = 375.0
+text = "You are a bounty hunter searching for the last of Captian Nebula's gold coins. Get them all to show the rulers of this sector your power
+
+
+Press Enter or LMB to continue"
